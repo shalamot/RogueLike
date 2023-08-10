@@ -19,6 +19,7 @@ namespace Hero.Movement
         
         private Transform _transform;
         private HeroAnimator _animator;
+        private CharacterController _characterController;
 
         private void Awake() {
             _transform = transform;
@@ -27,16 +28,20 @@ namespace Hero.Movement
 
         private void OnEnable() {
             InputService.OnMove += OnMove;
+            InputService.OnRift += OnRift;
+            _characterController = GetComponent<CharacterController>();
         }
 
         private void OnDisable() {
             InputService.OnMove -= OnMove;
+            InputService.OnRift -= OnRift;
         }
 
         private void OnMove(Vector3 direction) {
             //_transform.forward = direction;
             if (direction != Vector3.zero) {
-                _transform.position += direction * _speed;
+                //_transform.position += direction * _speed;
+                _characterController.Move(direction * _speed);
                 
                 var currentRotation = _transform.rotation;
                 var targetRotation = Quaternion.LookRotation(direction);
@@ -48,5 +53,7 @@ namespace Hero.Movement
                 _animator.PlayIdle();
             }
         }
+
+        private void OnRift(Vector3 direction) => _animator.PlayRift();
     }
 }

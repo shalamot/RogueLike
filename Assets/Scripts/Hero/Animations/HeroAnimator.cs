@@ -4,6 +4,7 @@ namespace Hero.Animations
 {
     public sealed class HeroAnimator : MonoBehaviour
     {
+        private const int RiftState = 2;
         private const int MoveState = 1;
         private const int IdleState = 0;
 
@@ -15,5 +16,7 @@ namespace Hero.Animations
         public void PlayMove() => _animator.SetInteger(_state, MoveState);
 
         public void PlayIdle() => _animator.SetInteger(_state, IdleState);
+
+        public void PlayRift() => _animator.SetInteger(_state, RiftState);
     }
 }

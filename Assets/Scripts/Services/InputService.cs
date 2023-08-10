@@ -6,6 +6,7 @@ namespace Services
     public sealed class InputService : MonoBehaviour
     {
         public event Action<Vector3> OnMove;
+        public event Action<Vector3> OnRift;
         public event Action OnAttack;
         
         private void Update() {
@@ -30,6 +31,10 @@ namespace Services
             //if (direction != Vector3.zero) {
                 OnMove?.Invoke(direction * Time.deltaTime);
             //}
+            if (Input.GetKeyDown(KeyCode.LeftShift)) {
+                OnRift?.Invoke(direction);
+                //Debug.Log("leftshift");
+            }
         }
     }
 }
