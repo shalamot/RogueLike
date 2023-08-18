@@ -41,13 +41,14 @@ namespace Hero.Movement
             //_transform.forward = direction;
             if (direction != Vector3.zero) {
                 //_transform.position += direction * _speed;
-                _characterController.Move(direction * _speed);
                 
                 var currentRotation = _transform.rotation;
                 var targetRotation = Quaternion.LookRotation(direction);
             
                 _transform.rotation = Quaternion.Slerp(currentRotation, targetRotation, _rotationSpeed * Time.deltaTime);
                 
+                direction.y = -0.5f;
+                _characterController.Move(direction * _speed);
                 _animator.PlayMove();
             }else {
                 _animator.PlayIdle();

@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ac76b16d-f6bc-49a6-9491-852d2c099a1c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.My project (4)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project (4)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hero/Animations/HeroAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hero/Animations/HeroAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/run.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hero/Movement/HeroMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hero/Movement/HeroMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/InputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Animation/HumanoidRun.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Animation/HumanoidRun.fbx.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +101,7 @@
       <workItem from="1691423761826" duration="12887000" />
       <workItem from="1691491926027" duration="775000" />
       <workItem from="1691668540667" duration="6130000" />
+      <workItem from="1692357247236" duration="869000" />
     </task>
     <servers />
   </component>
